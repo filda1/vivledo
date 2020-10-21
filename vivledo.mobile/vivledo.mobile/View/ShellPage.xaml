@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:vivledo.mobile.View"
+       x:Class="vivledo.mobile.View.ShellPage">
+
+    <Shell.FlyoutHeader>
+        <local:HeaderPage/>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="MyTabApp"
+               Shell.TabBarIsVisible="False"
+               FlyoutDisplayOptions="AsMultipleItems">
+
+        <Tab Icon="one.png" Title="Bears">
+           
+        </Tab>
+
+
+
+    </FlyoutItem>
+    <FlyoutItem Title="MyTabApp"
+               Shell.TabBarIsVisible="False"
+               FlyoutDisplayOptions="AsMultipleItems">
+
+        <Tab Icon="two.png" Title="Elephants">
+          
+        </Tab>
+
+    </FlyoutItem>
+
+   
+
+
+</Shell>

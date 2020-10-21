@@ -1,4 +1,5 @@
 ﻿using System;
+using vivledo.mobile.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace vivledo.mobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new View.HomePage();
+            MainPage = new ShellPage();
         }
 
         protected override void OnStart()

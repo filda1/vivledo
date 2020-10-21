@@ -123,14 +123,74 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client">
+      <Version>3.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Refractored.MvvmHelpers">
+      <Version>1.6.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms.PancakeView">
+      <Version>2.1.0.714</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\vivledo.mobile\vivledo.mobile.csproj">
-      <Project>{02D27CAE-FEBC-4B45-A675-83E971A04B28}</Project>
-      <Name>vivledo.mobile</Name>
-    </ProjectReference>
+    <BundleResource Include="Resources\Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CompleteHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Dessert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmptyHeart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HamburgerMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MainBurger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\More.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Option2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Option3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Add.png" />
   </ItemGroup>
 </Project>

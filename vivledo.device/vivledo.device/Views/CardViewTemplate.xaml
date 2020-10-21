@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="vivledo.device.Views.CardViewTemplate">
+    
+    
+    <Frame IsClippedToBounds="True" HasShadow="True" BackgroundColor="White" >
+        <Frame.OutlineColor>
+            <OnPlatform x:TypeArguments="Color" Android="Gray" iOS="Gray"/>
+        </Frame.OutlineColor>
+        <Frame.Margin>
+            <OnPlatform x:TypeArguments="Thickness" Android="7" iOS="7"/>
+        </Frame.Margin>
+        <Frame.Padding>
+            <OnPlatform x:TypeArguments="Thickness" Android="5" iOS="5"/>
+        </Frame.Padding>
+
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+            <Grid VerticalOptions="CenterAndExpand" Padding="0"
+                  HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start"  HorizontalOptions="FillAndExpand">
+                    <controls:CircleImage Source="{Binding Picture}" VerticalOptions="Start" HeightRequest="30" WidthRequest="50"></controls:CircleImage>
+                    <Label FontAttributes="None" Grid.Row="0"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Center"
+                       FontSize="12"
+                       Text="{Binding Name }" TextColor="Gray" >
+                    </Label>
+                </StackLayout>
+
+                <Grid Grid.Row="1">
+                    <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                        <Label FontAttributes="None" Grid.Row="1"
+                           HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Start"
+                           FontSize="12" Text="{Binding  Description}" 
+                               TextColor="Black">
+                        </Label>
+                        <Image Source="{Binding  Rating}"  Grid.Row="2"  WidthRequest="50" 
+                               HeightRequest="50" HorizontalOptions="End" />
+                    </StackLayout>
+                </Grid>
+
+                <Grid Grid.Row="2" BackgroundColor="Transparent" Padding="4"  HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" />
+                    <Label Grid.Row="0" Grid.Column="0"
+                        Text="{Binding IntervalTime}" HorizontalOptions="Start" VerticalOptions="Start"/>
+                </Grid>
+
+            </Grid>
+        </StackLayout>
+    </Frame>
+    </ContentView>
