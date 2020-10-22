@@ -16,5 +16,11 @@ namespace vivledo.device.Views
         {
             InitializeComponent();
         }
+
+        private void ActionsToogle(object sender, ToggledEventArgs e)
+        {
+            bool isToogled = e.Value;
+            mainLabel.Text = isToogled.ToString();
+        }
     }
 }

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:vivledo.device.ViewModels" xmlns:view="clr-namespace:vivledo.device.Views"
+             x:Class="vivledo.device.Views.AlertPage"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <viewModel:CardViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Botão 1" Clicked="OnClickButtonOne" Order="Secondary" />
+        <ToolbarItem Text="Botão 2" Clicked="OnClickButtonTwo" Order="Secondary" />
+        <ToolbarItem Text="Botão 3" Clicked="OnClickButtonThree" Order="Primary" Icon="search" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="Alert"
+             VerticalOptions="Start"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             BackgroundColor="Transparent"
+             HorizontalOptions="CenterAndExpand" />
+        <ListView x:Name="listView" SelectedItem="{Binding SelectedItem , Mode=TwoWay }" 
+              RowHeight="150" 
+              ItemsSource="{Binding alert}" HasUnevenRows="True"  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <view:CardViewTemplate/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

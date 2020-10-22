@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Windows.Input;
+using System.Text;
 using vivledo.device.Models;
-using Xamarin.Essentials;
-using Xamarin.Forms;
-using Menu = vivledo.device.Models.Menu;
 
 namespace vivledo.device.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class GalleryViewModel:BaseViewModel
     {
         public ObservableCollection<Menu> menu { get; set; }
         public ObservableCollection<PopularFood> popularFood { get; set; }
@@ -18,9 +15,9 @@ namespace vivledo.device.ViewModels
         public IList<PopularFood> CardViewCollection { get; set; }
         public object SelectedItem { get; set; }
 
-        public AboutViewModel()
+        public GalleryViewModel()
         {
-            Title = "Timeline";
+            Title = "Media";
             //OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamain-quickstart"));
 
             CardViewCollection = new List<PopularFood>();
@@ -62,33 +59,33 @@ namespace vivledo.device.ViewModels
 
 
 
-           /* popularFood = new ObservableCollection<PopularFood>
-            {
-                new PopularFood
-                {
-                    Picture="Option1",
-                    Name="Millonario State Cafe",
-                    Description="Deli - Pizza - Breakfast and Brunch",
-                    Rating=" 4.5 (98) ",
-                    IntervalTime="10-15 min"
-                },
-                new PopularFood
-                {
-                    Picture="Option2",
-                    Name="Burger State",
-                    Description="Burgers - Pizza",
-                    Rating=" 4.0 (90) ",
-                    IntervalTime="10-15 min"
-                },
-                new PopularFood
-                {
-                    Picture="Option3",
-                    Name="Burger Burger",
-                    Description="Breakfast and Brunch",
-                    Rating=" 4.9 (100) ",
-                    IntervalTime="10-15 min"
-                }
-            };*/
+            /* popularFood = new ObservableCollection<PopularFood>
+             {
+                 new PopularFood
+                 {
+                     Picture="Option1",
+                     Name="Millonario State Cafe",
+                     Description="Deli - Pizza - Breakfast and Brunch",
+                     Rating=" 4.5 (98) ",
+                     IntervalTime="10-15 min"
+                 },
+                 new PopularFood
+                 {
+                     Picture="Option2",
+                     Name="Burger State",
+                     Description="Burgers - Pizza",
+                     Rating=" 4.0 (90) ",
+                     IntervalTime="10-15 min"
+                 },
+                 new PopularFood
+                 {
+                     Picture="Option3",
+                     Name="Burger Burger",
+                     Description="Breakfast and Brunch",
+                     Rating=" 4.9 (100) ",
+                     IntervalTime="10-15 min"
+                 }
+             };*/
 
 
         }
