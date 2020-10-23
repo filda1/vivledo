@@ -80,12 +80,14 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="About" Icon="tab_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Timeline" Icon="timelinetext.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
         <!-- <ShellContent Title="Browse" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />-->
-        <ShellContent Title="Following" Icon="tab_feed.png" Route="FollowingPage" ContentTemplate="{DataTemplate local:FollowingPage}" />
-        <ShellContent Title="Followers" Icon="tab_feed.png" Route="FollowersgPage" ContentTemplate="{DataTemplate local:FollowersPage}" />
-        <ShellContent Title="Media" Icon="tab_feed.png" Route="GalleryPage" ContentTemplate="{DataTemplate local:GalleryPage}" />
-        <ShellContent Title="Alerts" Icon="tab_feed.png" Route="AlertPage" ContentTemplate="{DataTemplate local:AlertPage}" />
+        <!-- <ShellContent Title="Following" Icon="tab_feed.png" Route="FollowingPage" ContentTemplate="{DataTemplate local:FollowingPage}" />
+       <ShellContent Title="Followers" Icon="tab_feed.png" Route="FollowersgPage" ContentTemplate="{DataTemplate local:FollowersPage}" /> -->
+        <ShellContent Title="Profile" Icon="accountbox.png" Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
+        <ShellContent Title="Media" Icon="foldermultipleimage1.png" Route="GalleryPage" ContentTemplate="{DataTemplate local:GalleryPage}" />
+        <ShellContent Title="Alerts" Icon="bell1.png" Route="AlertPage" ContentTemplate="{DataTemplate local:AlertPage}" />
+        
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

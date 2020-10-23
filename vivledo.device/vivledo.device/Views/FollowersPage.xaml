@@ -8,10 +8,12 @@
         <vm:FollowersViewModel />
     </ContentPage.BindingContext>
 
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Botão 1" Clicked="OnClickButtonOne" Order="Secondary" />
-        <ToolbarItem Text="Botão 2" Clicked="OnClickButtonTwo" Order="Secondary" />
-        <ToolbarItem Text="Botão 3" Clicked="OnClickButtonThree" Order="Primary" Icon="search.png" />
+        <ToolbarItem Icon="dotsvertical"  Clicked="OnClickButtonThree" Order="Secondary" />
+        <!-- Main structure
+        <ToolbarItem    Clicked="OnClickButtonTwo" Order="Secondary" />
+        <ToolbarItem Text="Botão 3" Clicked="OnClickButtonThree" Order="Primary" Icon="search" />-->
     </ContentPage.ToolbarItems>
 
 
@@ -78,7 +80,7 @@
                                                             HorizontalOptions="Center"
                                                            />
 
-                                            <Image Source="Wow_icon" HorizontalOptions="Start" WidthRequest="12" Margin="10,0,0,0"/>
+                                            <Image Source="dotsverticalN" HorizontalOptions="Start" WidthRequest="12" Margin="10,0,0,0"/>
                                         </StackLayout>
                                     </StackLayout>
                                 </ContentView>

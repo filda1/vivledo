@@ -16,12 +16,15 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Botão 1" Clicked="OnClickButtonOne" Order="Secondary" />
-        <ToolbarItem Text="Botão 2" Clicked="OnClickButtonTwo" Order="Secondary" />
-        <ToolbarItem Text="Botão 3" Clicked="OnClickButtonThree" Order="Primary" Icon="search.png" />
-    </ContentPage.ToolbarItems>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="dotsvertical"  Clicked="OnClickButtonThree" Order="Secondary" />
+        <!-- Main structure
+        <ToolbarItem    Clicked="OnClickButtonTwo" Order="Secondary" />
+        <ToolbarItem Text="Botão 3" Clicked="OnClickButtonThree" Order="Primary" Icon="search" />-->
+    </ContentPage.ToolbarItems>
+    
+    
     <ScrollView  >
         <!-- Main structure-->
         <Grid Margin="20,-20,0,0" >

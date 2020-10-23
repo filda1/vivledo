@@ -16,9 +16,10 @@
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Botão 1" Clicked="OnClickButtonOne" Order="Secondary" />
-        <ToolbarItem Text="Botão 2" Clicked="OnClickButtonTwo" Order="Secondary" />
-        <ToolbarItem Text="Botão 3" Clicked="OnClickButtonThree" Order="Primary" Icon="search.png" />
+        <ToolbarItem Icon="dotsvertical"  Clicked="OnClickButtonThree" Order="Secondary" />
+        <!-- Main structure
+        <ToolbarItem    Clicked="OnClickButtonTwo" Order="Secondary" />
+        <ToolbarItem Text="Botão 3" Clicked="OnClickButtonThree" Order="Primary" Icon="search" />-->
     </ContentPage.ToolbarItems>
 
     <ScrollView  >
@@ -54,7 +55,7 @@
                                    Margin="0,0"
                                    HeightRequest="125"
                                    VerticalOptions="FillAndExpand"
-                             HorizontalOptions="FillAndExpand"
+                                   HorizontalOptions="FillAndExpand"
                                    HorizontalScrollBarVisibility="Never" 
                                    ItemsLayout="HorizontalList" 
                                    BackgroundColor="White"
@@ -80,23 +81,31 @@
                          VerticalOptions="FillAndExpand" >
                 <StackLayout Orientation="Horizontal"  BackgroundColor="White">
 
-                    <Frame CornerRadius="50" 
+                    <controls:CircleImage 
+                                            Source="person2.jpg" 
+                                            VerticalOptions="Start"
+                                            HeightRequest="80" WidthRequest="80"></controls:CircleImage>
+
+                    <!--  <Frame CornerRadius="50" 
                            HeightRequest="50"
                            WidthRequest="80"
                            HorizontalOptions="Center"
                            Padding="0"
                            IsClippedToBounds="True">
-                        <Image Source="person2.jpg" 
+                      
+
+                      <Image Source="person2.jpg" 
                            HorizontalOptions="Start"
                            VerticalOptions="Start" />
-                    </Frame>
+
+                    </Frame>-->
                     <StackLayout HorizontalOptions="FillAndExpand" >
                         <Frame HeightRequest="40" 
                                BackgroundColor="AliceBlue" 
                                CornerRadius="40" 
                                Margin="1">
 
-                            <Entry Text="Write a comment..."  CursorPosition="0" IsEnabled="True" IsReadOnly="False" />
+                            <Entry Text="Write a comment..."  CursorPosition="0"  IsReadOnly="False" BackgroundColor="AliceBlue" />
                         </Frame>
 
                     </StackLayout>
@@ -110,7 +119,7 @@
             <!--1.3 Popular menu-->
             <Label Grid.Row="6" Grid.Column="0" Text="Popular" FontSize="25" FontAttributes="Bold"  />
             <CollectionView ItemsSource="{Binding  CardViewCollection}"
-                                   Margin="0,40,10,0" 
+                                   Margin="0,40,20,0" 
                                    VerticalOptions="Start"
                                    VerticalScrollBarVisibility="Never" 
                                    Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3"  >
@@ -121,7 +130,7 @@
                             <Frame BorderColor="LightGray">
                                
                                 
-                                <Grid  Margin="0,4">
+                                <Grid  Margin="0,4,0,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
@@ -131,7 +140,7 @@
                                     </Grid.RowDefinitions>
 
 
-                                    <StackLayout Padding="0,-1,0,0">
+                                    <StackLayout Padding="10,-1,0,0">
 
                                         <StackLayout>
                                             <StackLayout Orientation="Horizontal" >
@@ -159,7 +168,7 @@
                                     </StackLayout>
 
                                     <PanCake:PancakeView Grid.Row="1" CornerRadius="0" Margin="0,0,0,0">
-                                    <Image Source="{Binding Picture}" HeightRequest="220" Aspect="Fill"/>
+                                    <Image Source="{Binding Picture}" HeightRequest="220"  Aspect="Fill"/>
                                     </PanCake:PancakeView>
 
                                     <StackLayout Orientation="Horizontal" Grid.Row="2">
@@ -180,17 +189,18 @@
                                                 <ColumnDefinition Width="Auto"/>
                                             </Grid.ColumnDefinitions>
 
-                                            <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                                                <Image Source="share"  HorizontalOptions="Start" WidthRequest="40" Margin="0,5,0,0"/>
-                                                <Label Text="Like" FontSize="13" Margin="0,17,0,0" ></Label>
+                                            <StackLayout Grid.Column="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,40,0">
+                                                <Image Source="likeicon"  HorizontalOptions="Start" WidthRequest="23"  HeightRequest="23"  Margin="0,5,0,0"/>
+                                                <Label Text="Like" FontSize="13" Margin="0,12,0,0" ></Label>
                                             </StackLayout>
-                                            <StackLayout Grid.Column="2" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                                                <Image Source="share"   HorizontalOptions="Center" WidthRequest="40" Margin="0,5,0,0"/>
-                                                <Label Text="Comment" FontSize="13" Margin="0,17,0,0"></Label>
+                                            <StackLayout Grid.Column="2" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,40,0">
+                                                <Image Source="commenticon"   HorizontalOptions="Center" WidthRequest="23"  HeightRequest="23" Margin="0,11,0,0"/>
+                                                <Label Text="Comment" FontSize="13" Margin="0,12,0,0"></Label>
                                             </StackLayout>
                                             <StackLayout Grid.Column="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                                                <Image Source="share"  HorizontalOptions="End" WidthRequest="40" Margin="0,5,0,0"/>
-                                                <Label Text="Message" FontSize="13" Margin="0,17,0,0"></Label>
+                                                <Image Source="commenticon"  HorizontalOptions="End" WidthRequest="23"  HeightRequest="23" Margin="0,5,0,0"/>
+                                            
+                                                <Label Text="Share" FontSize="13" Margin="0,12,0,0"></Label>
                                             </StackLayout>
                                            
                                            

@@ -217,4 +217,97 @@
   <ItemGroup>
     <BundleResource Include="Resources\Wow_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Katty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Correo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ProfilleImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\loginhuacachina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\person2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\friendicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\groupicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\notificationicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\homeicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\photoicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Vlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Vlogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bell1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\accountbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\foldermultipleimage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\timelinetext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\commentmultiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\thumbup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Share1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Like1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Comments1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\likeicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\commenticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\messageicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dotsvertical.png" />
+  </ItemGroup>
 </Project>
