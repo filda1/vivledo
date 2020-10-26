@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:vivledo.device.Models"
              mc:Ignorable="d"
              x:Class="vivledo.device.Views.LoginPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Shell.NavBarIsVisible="False"
              BackgroundColor="#161533">
 
@@ -49,7 +50,9 @@
             BorderColor="White"
             BorderThickness="1"
             CornerRadius="8"
-            Placeholder="Username"
+            Placeholder="Email"
+            Keyboard="Email"
+            Text="{Binding Email, Mode=TwoWay}"
             PlaceholderColor="White" />
 
         <controls:StandardEntry
@@ -60,9 +63,15 @@
             BorderColor="White"
             BorderThickness="1"
             CornerRadius="8"
-            IsPassword="True"
+            IsPassword="true"
+            Text="{Binding Password, Mode=TwoWay}"
             Placeholder="Password"
             PlaceholderColor="White" />
+
+        <ActivityIndicator
+                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
+                    VerticalOptions="CenterAndExpand">
+        </ActivityIndicator>
 
         <Button
             Grid.Row="4"
@@ -70,7 +79,9 @@
             CornerRadius="8"
             Text="LOGIN"
             TextColor="#4758AE"
-            TranslationY="-20" />
+            TranslationY="-20" 
+            Command="{Binding LoginCommand}"
+            IsEnabled="{Binding IsEnabled, Mode=TwoWay}"/>
 
         <Label
             Grid.Row="5"
@@ -82,7 +93,7 @@
                     <Span Text="Don't have an account? " />
                     <Span FontAttributes="Bold" Text="SIGNUP" >
                         <Span.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding SinginCommand}" />
+                            <TapGestureRecognizer Command="{Binding RegisterCommand}" />
                         </Span.GestureRecognizers>
                     </Span>
                 </FormattedString>

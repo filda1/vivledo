@@ -13,8 +13,9 @@ namespace vivledo.device
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            //DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
+            //this.MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
@@ -28,5 +29,7 @@ namespace vivledo.device
         protected override void OnResume()
         {
         }
+
+       
     }
 }

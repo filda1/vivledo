@@ -11,6 +11,7 @@ namespace vivledo.device
         public AppShell()
         {
             InitializeComponent();
+
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
         }
@@ -19,5 +20,7 @@ namespace vivledo.device
         {
             await Shell.Current.GoToAsync("//LoginPage");
         }
+
+
     }
 }
